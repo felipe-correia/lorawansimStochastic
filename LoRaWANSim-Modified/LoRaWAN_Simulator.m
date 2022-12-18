@@ -7,18 +7,17 @@ clearvars;%clear all variables
 clc;%clear command window
 
 %SIMULATION PARAMETERS
-input_simulation_duration_seconds=1200; %duration of the simulated time window
+input_simulation_duration_seconds=600; %duration of the simulated time window
 input_draw_playground_map=false; %draw the "map" of the playground with GWs, EDs, and DR zones? true or false
 input_all_nodes_use_same_DR=false; %all nodes use the same DR
 input_energy_simulate=true; %simulate energy consumption
 config_num_iterations=1; %number of simulation iterations, each iteration may have different distributions of ED,GWs and UL packets (depends on the respective files)
 
 %CONFIGS FOR LOOPs
-%config_loop_GWs=[1]; %number of GWs
-config_loop_GWs=[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]; %number of GWs
-config_loop_EDs=[500]; %number of EDs
-config_loop_packet_periodicity=[60]; %seconds
-config_loop_R=[5]; %circular area radius
+config_loop_GWs=[1]; %number of GWs
+config_loop_EDs=[200]; %number of EDs
+config_loop_packet_periodicity=[30]; %seconds
+config_loop_R=[4]; %circular area radius
 config_loop_DR_RX2=[0]; %data rate in RX2
 config_loop_RX_priority=[1];
 
